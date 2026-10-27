@@ -1,0 +1,2211 @@
+/* A calmer, more readable type scale across desktop and narrow layouts. */
+body {
+  background: var(--paper, #fff);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.eyebrow,
+.brand-sub {
+  font-size: 11px;
+}
+
+.nu-utility,
+.nu-utility button {
+  font-size: 12px;
+}
+
+.site-header nav a {
+  font-size: 13px;
+}
+
+.site-header nav a[href="/about/"] {
+  display: none;
+}
+
+.hero-copy h1 {
+  font-size: clamp(42px, 4vw, 56px);
+  line-height: 1.04;
+}
+
+.hero-deck {
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.arrow-link,
+.button {
+  font-size: 13px;
+}
+
+.editorial-grid h2,
+.section-heading h2 {
+  font-size: clamp(32px, 3.2vw, 42px);
+}
+
+.large-copy p {
+  font-size: clamp(20px, 2vw, 26px);
+}
+
+.section-heading > p {
+  font-size: 16px;
+}
+
+.research-tile h3,
+.research-tile.featured h3 {
+  font-size: clamp(20px, 1.7vw, 25px);
+}
+
+.research-tile > div {
+  font-size: 12px;
+}
+
+.research-field-cue {
+  font-size: 11px;
+}
+
+.research-field-summary {
+  cursor: default;
+}
+
+.research-field-summary:hover span {
+  text-decoration: none;
+}
+
+.page-hero h1 {
+  font-size: clamp(34px, 3.2vw, 46px);
+}
+
+.page-hero p {
+  font-size: 16px;
+}
+
+.publication-list h2,
+.research-index h2 {
+  font-size: clamp(20px, 1.5vw, 23px);
+}
+
+.public-writing-list .writing-abstract,
+.research-index > a > p {
+  font-size: 14px;
+}
+
+.article-subtitle,
+.article-body {
+  font-size: 17px;
+}
+
+.footer-main p {
+  font-size: 14px;
+}
+
+.footer-email,
+.footer-links {
+  font-size: 13px;
+}
+
+/* Homepage introduction: merge the profile hero and repeated About section. */
+.homepage-about-merged .field-bar,
+.homepage-about-merged .about-screen {
+  display: none;
+}
+
+.homepage-about-merged .hero-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.72fr);
+}
+
+.homepage-about-merged .hero-copy {
+  max-width: 720px;
+}
+
+.homepage-about-merged .hero-deck {
+  max-width: 680px;
+}
+
+.hero-facts {
+  display: grid;
+  grid-template-columns: 0.72fr 1.45fr 1fr;
+  margin-top: 32px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-facts > div {
+  min-width: 0;
+  padding: 14px 16px;
+  border-right: 1px solid var(--line);
+}
+
+.hero-facts > div:first-child {
+  padding-left: 0;
+}
+
+.hero-facts > div:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.hero-facts span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-facts strong,
+.hero-facts a {
+  display: block;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.hero-facts a {
+  color: var(--purple);
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.homepage-about-merged .action-row {
+  margin-top: 30px;
+}
+
+/* Secondary pages: one consistent floor for metadata and supporting copy. */
+.profile-facts span,
+.article-meta,
+.back-link,
+.results-count,
+.paper-download,
+.related-resources > a span,
+.footer-bottom {
+  font-size: 12px;
+}
+
+.academic-intro p,
+.research-overview p,
+.translation-note p,
+.cv-page a,
+.cv-page p {
+  font-size: 16px;
+}
+
+.research-tree button,
+.academic-sidebar > a,
+.paper-toolbar p {
+  font-size: 13px;
+}
+
+.academic-hero h1 {
+  font-size: clamp(38px, 4vw, 52px);
+}
+
+.academic-intro h2 {
+  font-size: clamp(26px, 2.5vw, 34px);
+}
+
+.research-tree h2 {
+  font-size: 18px;
+}
+
+.academic-content .publication-list h2,
+.research-results .research-index h2 {
+  font-size: clamp(19px, 1.6vw, 22px);
+}
+
+.article-layout aside {
+  font-size: 12px;
+}
+
+/* Experience uses dense data labels, but none should require squinting. */
+.experience-newsroom .newsroom-lead-copy h1 {
+  font-size: clamp(44px, 4.4vw, 60px);
+}
+
+.experience-newsroom .newsroom-summary,
+.experience-newsroom .newsroom-section-intro > p {
+  font-size: 15px;
+}
+
+.newsroom-primary-link,
+.newsroom-read-link,
+.exp3-tabs button {
+  font-size: 11px;
+}
+
+.exp3-presets button,
+.exp3-tool-note,
+.exp3-stage-caption,
+.exp3-rail-kicker,
+.exp3-rail-date,
+.exp3-method-note,
+.exp3-field-filters button,
+.exp3-activity-index header > small,
+.exp3-field-intro > small,
+.exp3-field-root > small,
+.exp3-under-map > div:first-child > small,
+.exp3-index-grid > button small {
+  font-size: 10px;
+}
+
+.exp3-rail-excerpt,
+.exp3-under-map p,
+.exp3-activity-index header p {
+  font-size: 13px;
+}
+
+.exp3-linked-copy small,
+.exp3-linked-copy em,
+.exp3-field-root span,
+.exp3-field-heading small,
+.exp3-field-heading em,
+.exp3-field-story-links > small,
+.exp3-field-story-links span,
+.exp3-index-grid > button em,
+.exp3-modal-activity > aside p,
+.exp3-media-placeholder p,
+.exp3-story-modal-related > button span {
+  font-size: 11px;
+}
+
+.exp3-field-activity-title p,
+.exp3-no-links {
+  font-size: 12px;
+}
+
+.exp3-field-activity-title .exp3-field-core {
+  font-size: 15px;
+}
+
+.exp3-field-activity-title > button,
+.exp3-modal > header small,
+.exp3-modal-activity > aside small,
+.exp3-modal-activity > div > small,
+.exp3-media-placeholder small,
+.exp3-story-modal-related > small {
+  font-size: 10px;
+}
+
+.exp3-legend,
+.exp3-map-foot,
+.exp3-axis-label,
+.exp3-grid-label {
+  font-size: 9px;
+}
+
+.exp3-rail-subhead small,
+.exp3-rail-subhead span {
+  font-size: 10px;
+}
+
+.exp3-index-num,
+.exp3-linked-number,
+.exp3-activity-node .exp3-node-shape b {
+  font-size: 9px;
+}
+
+.exp3-axis-label small {
+  font-size: 8px;
+}
+
+.hero-portrait figcaption {
+  font-size: 10px;
+}
+
+@media (max-width: 760px) {
+  .brand-name {
+    font-size: 25px;
+  }
+
+  .mobile-menu {
+    font-size: 13px;
+  }
+
+  .hero-copy h1 {
+    font-size: 38px;
+    line-height: 1.06;
+  }
+
+  .hero-deck {
+    font-size: 17px;
+  }
+
+  .homepage-about-merged .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-facts {
+    grid-template-columns: 0.75fr 1.25fr;
+    margin-top: 26px;
+  }
+
+  .hero-facts > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .hero-facts > div:last-child {
+    grid-column: 1 / -1;
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .page-hero h1 {
+    font-size: 36px;
+  }
+
+  .publication-list h2,
+  .research-index h2 {
+    font-size: 21px;
+  }
+
+  .academic-content .publication-list h2,
+  .research-results .research-index h2 {
+    font-size: 19px;
+  }
+
+  .article-page h1 {
+    font-size: 32px;
+  }
+
+  .academic-hero h1 {
+    font-size: 38px;
+  }
+
+  .academic-intro h2 {
+    font-size: 27px;
+  }
+
+  .article-body {
+    font-size: 16px;
+  }
+
+  .module-tools button {
+    font-size: 11px;
+  }
+
+  .module-tools p {
+    max-width: 220px;
+    font-size: 10px;
+  }
+
+  .experience-newsroom .newsroom-lead-copy h1 {
+    font-size: 44px;
+  }
+
+  .experience-newsroom .newsroom-section-intro > p {
+    font-size: 15px;
+  }
+
+  .exp3-stage-caption,
+  .exp3-rail-kicker,
+  .exp3-map-foot {
+    font-size: 9px;
+  }
+
+  .exp3-legend {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-copy h1 {
+    font-size: 36px;
+  }
+
+  .page-hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-facts > div {
+    padding: 12px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-facts > div:last-child {
+    grid-column: auto;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}
+
+/* Consistent spacing rhythm across page types. */
+:root {
+  --space-section: clamp(48px, 6vw, 76px);
+  --space-section-compact: clamp(36px, 4.5vw, 54px);
+  --space-block: clamp(24px, 3vw, 38px);
+}
+
+.screen {
+  padding-top: var(--space-section);
+  padding-bottom: var(--space-section);
+}
+
+.homepage-about-merged .hero-screen {
+  padding-top: var(--space-section-compact);
+  padding-bottom: var(--space-section-compact);
+}
+
+.homepage-about-merged .hero-grid {
+  gap: clamp(30px, 5vw, 64px);
+}
+
+.hero-copy h1 {
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+.homepage-about-merged .hero-facts {
+  margin-top: 24px;
+}
+
+.homepage-about-merged .action-row {
+  margin-top: 24px;
+}
+
+.section-heading {
+  gap: clamp(24px, 3vw, 38px);
+  margin-bottom: clamp(30px, 4vw, 48px);
+}
+
+@media (min-width: 961px) {
+  .research-screen .section-heading > p {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
+.page-hero,
+.academic-hero {
+  padding-top: var(--space-section-compact);
+  padding-bottom: var(--space-section-compact);
+}
+
+.content-wrap {
+  padding-top: var(--space-section-compact);
+  padding-bottom: clamp(80px, 9vw, 112px);
+}
+
+.academic-layout,
+.research-directory {
+  padding-top: var(--space-section-compact);
+  padding-bottom: clamp(80px, 9vw, 112px);
+}
+
+.article-page {
+  padding-top: var(--space-section-compact);
+}
+
+@media (max-width: 760px) {
+  :root {
+    --space-section: 48px;
+    --space-section-compact: 36px;
+  }
+
+  .homepage-about-merged .hero-grid {
+    gap: 28px;
+  }
+
+  .hero-copy h1 {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .homepage-about-merged .hero-facts {
+    margin-top: 22px;
+  }
+
+  .homepage-about-merged .action-row {
+    margin-top: 24px;
+  }
+
+  .section-heading {
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .content-wrap,
+  .academic-layout,
+  .research-directory {
+    padding-top: 36px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --space-section: 42px;
+    --space-section-compact: 32px;
+  }
+
+  .homepage-about-merged .hero-grid {
+    gap: 24px;
+  }
+}
+
+/* Final type hierarchy: fewer jumps, and no data label below a readable floor. */
+.site-header nav a {
+  font-size: 14px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(40px, 3.8vw, 52px);
+}
+
+.editorial-grid h2,
+.section-heading h2,
+.writing-intro h2 {
+  font-size: clamp(30px, 2.8vw, 38px);
+  line-height: 1.08;
+}
+
+.large-copy p {
+  font-size: clamp(19px, 1.7vw, 22px);
+  line-height: 1.5;
+}
+
+.page-hero h1,
+.academic-hero h1 {
+  font-size: clamp(34px, 3.4vw, 46px);
+  line-height: 1.06;
+}
+
+.article-page > header h1,
+.experience-newsroom .newsroom-lead-copy h1 {
+  font-size: clamp(36px, 3.8vw, 50px);
+  line-height: 1.04;
+}
+
+.publication-list h2,
+.research-index h2,
+.academic-content .publication-list h2,
+.research-results .research-index h2 {
+  font-size: clamp(19px, 1.45vw, 22px);
+}
+
+.exp3-axis-label,
+.exp3-grid-label,
+.exp3-legend,
+.exp3-map-foot,
+.exp3-index-num,
+.exp3-linked-number,
+.exp3-activity-node .exp3-node-shape b {
+  font-size: 10px;
+}
+
+.exp3-axis-label small {
+  font-size: 10px;
+}
+
+.exp3-map-foot {
+  flex-wrap: wrap;
+}
+
+.exp3-axis-title,
+.exp3-field-axis-label {
+  pointer-events: none;
+  paint-order: stroke fill;
+  stroke: rgba(252, 250, 255, 0.94);
+  stroke-linejoin: round;
+}
+
+.exp3-axis-title {
+  fill: var(--exp3-ink);
+  stroke-width: 5px;
+  font: 700 10px var(--sans);
+  letter-spacing: 0.11em;
+}
+
+.exp3-axis-note {
+  fill: var(--exp3-muted);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.exp3-field-axis-label {
+  stroke-width: 4px;
+  font: 700 9px var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exp3-field-axis-people {
+  fill: var(--exp3-people);
+}
+
+.exp3-field-axis-media {
+  fill: var(--exp3-media);
+}
+
+.exp3-field-axis-governance {
+  fill: var(--exp3-governance);
+}
+
+.exp3-field-axis-policy {
+  fill: var(--exp3-policy);
+}
+
+.exp3-field-axis-technology {
+  fill: var(--exp3-technology);
+}
+
+.exp3-axis-attached {
+  position: absolute;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  transform-origin: center;
+  color: var(--exp3-ink);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  line-height: 1.15;
+  text-align: center;
+  text-shadow:
+    -2px -2px 0 var(--exp3-paper),
+    2px -2px 0 var(--exp3-paper),
+    -2px 2px 0 var(--exp3-paper),
+    2px 2px 0 var(--exp3-paper);
+  white-space: nowrap;
+}
+
+.exp3-axis-attached b {
+  font-weight: 700;
+}
+
+.exp3-axis-attached small {
+  margin-top: 4px;
+  color: var(--exp3-muted);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}
+
+.exp3-axis-fixed-position {
+  position: absolute;
+  z-index: 60;
+  top: 16px;
+  left: 14px;
+  max-width: 190px;
+  padding: 7px 9px;
+  border-left: 2px solid var(--exp3-governance);
+  background: rgba(252, 250, 255, 0.92);
+  pointer-events: none;
+  line-height: 1.25;
+}
+
+.exp3-axis-fixed-position b,
+.exp3-axis-fixed-position small {
+  display: block;
+}
+
+.exp3-axis-fixed-position b {
+  color: var(--exp3-ink);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.exp3-axis-fixed-position small {
+  margin-top: 4px;
+  color: var(--exp3-muted);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.exp3-field-attached {
+  position: absolute;
+  z-index: 61;
+  padding: 3px 6px;
+  border-left: 2px solid currentColor;
+  background: rgba(252, 250, 255, 0.94);
+  pointer-events: none;
+  transform: translate(-100%, -115%);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.exp3-field-attached-people {
+  color: var(--exp3-people);
+}
+
+.exp3-field-attached-media {
+  color: var(--exp3-media);
+}
+
+.exp3-field-attached-governance {
+  color: var(--exp3-governance);
+}
+
+.exp3-field-attached-policy {
+  color: var(--exp3-policy);
+}
+
+.exp3-field-attached-technology {
+  color: var(--exp3-technology);
+}
+
+.exp3-map-field-key {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 10px 13px;
+  border-top: 1px solid #eee7f3;
+  border-bottom: 1px solid #eee7f3;
+  background: #fcfaff;
+}
+
+.exp3-map-field-key > span {
+  margin-right: 5px;
+  color: var(--exp3-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.exp3-map-field-key button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 9px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #81718f;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.exp3-map-field-key button:hover,
+.exp3-map-field-key button:focus-visible,
+.exp3-map-field-key button.active {
+  border-color: #b9a4cd;
+  background: #f4edf9;
+  color: var(--exp3-ink);
+}
+
+.exp3-map-field-key button i {
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+}
+
+.exp3-symbol-key {
+  display: flex;
+  flex: 1 0 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #eee7f3;
+}
+
+.exp3-symbol-key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exp3-symbol-key i {
+  display: inline-block;
+  width: 18px;
+  height: 0;
+  border-top: 2px solid var(--exp3-governance);
+}
+
+.exp3-symbol-key .exp3-legend-experience {
+  border-top-style: none;
+}
+
+.exp3-symbol-key .exp3-legend-experience::after {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--exp3-governance);
+  border-radius: 50%;
+  content: "";
+}
+
+.exp3-symbol-key .exp3-legend-activity {
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--exp3-media);
+  border-radius: 2px;
+}
+
+.exp3-symbol-key .exp3-legend-branch {
+  border-top: 1px dotted #a28ab8;
+}
+
+.exp3-under-map {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.exp3-under-map > div:first-child {
+  max-width: 720px;
+}
+
+.mega-group .mega-subhead {
+  margin: 14px 0 2px;
+  padding: 7px 0 5px;
+  border-bottom: 1px solid color-mix(in srgb, var(--purple) 20%, var(--line));
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.mega-menu[aria-label="Writing menu"] .mega-group > a {
+  padding: 7px 0;
+  font-size: 12.5px;
+}
+
+.mega-menu[aria-label="Writing menu"] .mega-group > h3 {
+  margin-bottom: 6px;
+}
+
+.mega-menu[aria-label="Writing menu"] .mega-group > .mega-group-heading {
+  margin-bottom: 6px;
+  padding: 0 0 8px;
+  border-bottom-color: color-mix(in srgb, var(--purple) 55%, var(--line));
+  color: var(--purple);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mega-group-heading > span {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.exp3-presets button,
+.exp3-tool-note,
+.exp3-stage-caption,
+.exp3-rail-kicker,
+.exp3-rail-date,
+.exp3-method-note,
+.exp3-field-filters button,
+.exp3-activity-index header > small,
+.exp3-field-intro > small,
+.exp3-field-root > small,
+.exp3-under-map > div:first-child > small,
+.exp3-index-grid > button small {
+  font-size: 11px;
+}
+
+/* Writing is the umbrella; Commentary and Notes are its two collections. */
+.writing-screen {
+  background: var(--purple-pale);
+}
+
+.homepage-about-merged .writing-screen {
+  min-height: auto;
+  align-items: flex-start;
+}
+
+.writing-intro {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(360px, 1.2fr);
+  column-gap: clamp(28px, 6vw, 92px);
+  row-gap: 6px;
+  align-items: end;
+  margin-bottom: clamp(30px, 4vw, 48px);
+}
+
+.writing-intro .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.writing-intro h2 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.writing-intro p {
+  max-width: 570px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (min-width: 961px) {
+  .writing-intro {
+    grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);
+  }
+
+  .writing-intro p {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
+.writing-paths {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.writing-path {
+  display: grid;
+  align-content: start;
+  min-height: 250px;
+  padding: clamp(26px, 3vw, 40px);
+}
+
+.writing-path + .writing-path {
+  border-left: 1px solid var(--line);
+}
+
+.writing-path h3 {
+  margin: 14px 0 12px;
+  color: var(--purple);
+  font-family: var(--display);
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.15;
+}
+
+.writing-path p {
+  max-width: 520px;
+  margin: 0 0 28px;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.writing-path b {
+  align-self: end;
+  color: var(--purple);
+  font-size: 13px;
+}
+
+.writing-path:hover h3,
+.writing-path:focus-visible h3 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+@media (max-width: 760px) {
+  .hero-copy h1 {
+    font-size: 38px;
+  }
+
+  .page-hero h1,
+  .academic-hero h1,
+  .article-page > header h1,
+  .experience-newsroom .newsroom-lead-copy h1 {
+    font-size: 34px;
+  }
+
+  .editorial-grid h2,
+  .section-heading h2,
+  .writing-intro h2 {
+    font-size: 30px;
+  }
+
+  .writing-intro,
+  .writing-paths {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-intro {
+    column-gap: 0;
+    row-gap: 8px;
+  }
+
+  .writing-intro .eyebrow {
+    grid-column: auto;
+    margin-bottom: 0;
+  }
+
+  .writing-path {
+    min-height: 0;
+    padding: 26px 0;
+  }
+
+  .writing-path + .writing-path {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+
+/* Header roles: identity on the left, navigation on the right. */
+.site-header {
+  min-height: 78px;
+}
+
+.site-header .header-inner {
+  min-height: 74px;
+}
+
+.site-header .brand-sub {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 70px;
+  }
+
+  .site-header .header-inner {
+    min-height: 66px;
+  }
+}
+
+/* Homepage first view: denser rhythm with a stronger primary scale. */
+.homepage-about-merged .hero-screen {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.homepage-about-merged .hero-grid {
+  height: auto;
+  min-height: 0;
+  gap: clamp(28px, 4vw, 48px);
+}
+
+.homepage-about-merged .hero-copy h1 {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  font-size: clamp(44px, 4.2vw, 56px);
+}
+
+.homepage-about-merged .hero-deck {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.homepage-about-merged .hero-facts {
+  margin-top: 20px;
+}
+
+.homepage-about-merged .hero-facts > div {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.homepage-about-merged .hero-facts strong,
+.homepage-about-merged .hero-facts a {
+  font-size: 15px;
+}
+
+.homepage-about-merged .action-row {
+  margin-top: 18px;
+}
+
+.homepage-about-merged .hero-portrait {
+  height: clamp(480px, 45vw, 580px);
+  min-height: 0;
+}
+
+@media (max-width: 760px) {
+  .homepage-about-merged .hero-screen {
+    padding-top: 24px;
+    padding-bottom: 28px;
+  }
+
+  .homepage-about-merged .hero-copy h1 {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-size: 42px;
+  }
+
+  .homepage-about-merged .hero-deck {
+    font-size: 18px;
+  }
+
+  .homepage-about-merged .hero-portrait {
+    height: clamp(420px, 70vw, 520px);
+    min-height: 0;
+  }
+}
+
+.hero-role {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.hero-thesis {
+  margin: 0 0 8px;
+  color: var(--purple);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+/* Homepage Experience is a preview; the complete archive lives on /experience/. */
+.experience-preview-deck {
+  max-width: 720px;
+  margin: 0 0 28px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.experience-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-preview-grid > a {
+  min-height: 210px;
+  padding: 26px;
+}
+
+.experience-preview-grid > a + a {
+  border-left: 1px solid var(--line);
+}
+
+.experience-preview-grid h3 {
+  margin: 14px 0 10px;
+  color: var(--purple);
+  font-family: var(--display);
+  font-size: clamp(20px, 1.7vw, 25px);
+  line-height: 1.2;
+}
+
+.experience-preview-grid p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.experience-preview-grid b {
+  color: var(--purple);
+  font-size: 13px;
+}
+
+/* Full-site search. */
+.utility-home {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.search-directory {
+  width: min(var(--max), calc(100% - 2 * var(--pad)));
+  margin: 0 auto;
+  padding: var(--space-section-compact) 0 clamp(80px, 9vw, 112px);
+}
+
+.site-index-search {
+  max-width: 760px;
+}
+
+.site-index-search > label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-index-search > div {
+  display: flex;
+  border-bottom: 2px solid var(--purple);
+}
+
+.site-index-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  padding: 14px 0;
+  background: transparent;
+  font-size: 18px;
+}
+
+.site-index-search button {
+  border: 0;
+  background: transparent;
+  color: var(--purple);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.search-type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 18px;
+}
+
+.search-type-filters button {
+  border: 1px solid var(--line);
+  padding: 8px 13px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.search-type-filters button.active {
+  border-color: var(--purple);
+  background: var(--purple);
+  color: #fff;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.footer-writing-parent {
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.footer-writing-child {
+  padding-left: 12px;
+  color: color-mix(in srgb, currentColor 78%, transparent);
+}
+
+.cv-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+@media (max-width: 760px) {
+  .exp3-axis-title {
+    font-size: 9px;
+  }
+
+  .exp3-axis-note,
+  .exp3-field-axis-label {
+    font-size: 7px;
+  }
+
+  .exp3-axis-attached {
+    font-size: 8px;
+  }
+
+  .exp3-axis-attached small,
+  .exp3-field-attached {
+    font-size: 7px;
+  }
+
+  .experience-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-preview-grid > a {
+    min-height: 0;
+    padding: 24px 0;
+  }
+
+  .experience-preview-grid > a + a {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+
+/*
+ * Site-wide typography template
+ * Display: identity, page/section/card titles.
+ * Sans: navigation, controls, labels, metadata, explanatory copy.
+ * Serif: sustained reading, abstracts, quotations, and narrative excerpts.
+ */
+:root {
+  --type-page-title: clamp(34px, 3.4vw, 46px);
+  --type-section-title: clamp(30px, 2.8vw, 38px);
+  --type-card-title: clamp(20px, 1.55vw, 24px);
+  --type-reading: 16px;
+  --type-supporting: 14px;
+  --type-meta: 11px;
+}
+
+.brand-name,
+.hero-copy h1,
+.editorial-grid h2,
+.section-heading h2,
+.writing-intro h2,
+.page-hero h1,
+.academic-hero h1,
+.article-page > header h1,
+.experience-newsroom .newsroom-lead-copy h1,
+.experience-newsroom .newsroom-lead-copy h1 em,
+.newsroom-cover-caption h2,
+.newsroom-section-intro h2,
+.newsroom-section-intro h2 em,
+.academic-masthead p,
+.profile-copy h1,
+.academic-intro h2,
+.research-tree h2,
+.publication-list h2,
+.research-index h2,
+.research-tile h3,
+.writing-path h3,
+.experience-preview-grid h3,
+.sidebar-title,
+.external-list b,
+.cv-page h2,
+.notes-page h2,
+.source-note h2,
+.exp3-hover-card b,
+.exp3-story-rail h3,
+.exp3-linked-copy b,
+.exp3-under-map h3,
+.exp3-field-intro h2,
+.exp3-field-root b,
+.exp3-field-heading b,
+.exp3-field-activity-title h3,
+.exp3-field-story-links b,
+.exp3-activity-index h2,
+.exp3-index-grid > button b,
+.exp3-modal > header h2,
+.exp3-modal-activity > aside b,
+.exp3-story-modal-related > button b {
+  font-family: var(--display);
+}
+
+.site-header,
+.nu-utility,
+.academic-masthead,
+.academic-mark,
+.experience-newsroom,
+.exp3-module,
+.exp3-modal > header p,
+.exp3-field-intro p,
+.exp3-under-map p,
+.exp3-activity-index header p,
+.profile-facts a,
+.profile-facts b {
+  font-family: var(--sans);
+}
+
+.hero-thesis,
+.article-body,
+.rich-article,
+.research-index > a > p,
+.public-writing-list .writing-abstract,
+.exp3-hover-card span,
+.exp3-rail-hook,
+.exp3-rail-excerpt,
+.exp3-field-activity-title .exp3-field-core,
+.exp3-modal-story blockquote,
+.exp3-modal-story > p,
+.exp3-core-text {
+  font-family: var(--serif);
+}
+
+.experience-newsroom .newsroom-lead-copy h1 em {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.82em;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.newsroom-deck {
+  max-width: 620px;
+  margin-bottom: 18px;
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.52;
+  letter-spacing: -0.01em;
+}
+
+.newsroom-cover-caption h2 {
+  margin: 9px 0 7px;
+  font-size: var(--type-card-title);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.newsroom-cover-caption p {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.newsroom-section-intro h2 {
+  margin-top: 12px;
+  font-size: var(--type-section-title);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.newsroom-section-intro h2 em {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.academic-masthead p {
+  font-weight: 500;
+}
+
+.brand-name {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.page-hero h1,
+.academic-hero h1,
+.article-page > header h1,
+.experience-newsroom .newsroom-lead-copy h1 {
+  font-size: var(--type-page-title);
+  line-height: 1.06;
+}
+
+.editorial-grid h2,
+.section-heading h2,
+.writing-intro h2 {
+  font-size: var(--type-section-title);
+  line-height: 1.1;
+}
+
+.research-tile h3,
+.research-tile.featured h3,
+.writing-path h3,
+.experience-preview-grid h3 {
+  font-size: var(--type-card-title);
+  line-height: 1.2;
+}
+
+.research-index > a > p,
+.public-writing-list .writing-abstract {
+  font-size: var(--type-supporting);
+  line-height: 1.65;
+}
+
+/* Experience follows the same hierarchy instead of using serif for every level. */
+.exp3-hover-card b {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.exp3-story-rail h3 {
+  font-size: clamp(28px, 2.5vw, 36px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.exp3-rail-hook {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.exp3-rail-excerpt {
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.exp3-linked-copy b {
+  font-size: 17px;
+  line-height: 1.15;
+}
+
+.exp3-open-story {
+  padding: 14px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+}
+
+.exp3-open-story span {
+  font-size: 17px;
+}
+
+.exp3-under-map h3 {
+  font-size: clamp(24px, 2.2vw, 32px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.exp3-field-intro h2 {
+  font-size: clamp(32px, 3.2vw, 42px);
+  font-weight: 600;
+  line-height: 1.06;
+}
+
+.exp3-field-intro p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.exp3-field-root b {
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.exp3-field-heading b {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.exp3-field-activity-title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.exp3-field-activity-title .exp3-field-core {
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+.exp3-field-story-links b {
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.exp3-activity-index h2 {
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.exp3-index-grid > button b {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.16;
+}
+
+.exp3-modal > header h2 {
+  font-size: clamp(32px, 3.6vw, 46px);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.exp3-modal > header p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.exp3-modal-story blockquote {
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.25;
+}
+
+.exp3-modal-story > p {
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.exp3-modal-activity > aside b,
+.exp3-story-modal-related > button b {
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.exp3-core-text {
+  font-size: clamp(19px, 1.8vw, 24px);
+  line-height: 1.58;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --type-page-title: 34px;
+    --type-section-title: 30px;
+    --type-card-title: 20px;
+    --type-reading: 16px;
+    --type-supporting: 14px;
+  }
+
+  .exp3-story-rail h3 {
+    font-size: 28px;
+  }
+
+  .exp3-field-intro h2,
+  .exp3-activity-index h2 {
+    font-size: 30px;
+  }
+
+  .exp3-modal > header h2 {
+    font-size: 32px;
+  }
+}
+
+/* Experience map: keep filters clearly outside the plotting canvas. */
+.exp3-stage-wrap {
+  display: grid;
+  grid-template-columns: clamp(150px, 13vw, 176px) minmax(0, 1fr);
+}
+
+.exp3-stage-caption,
+.exp3-map-foot {
+  grid-column: 1 / -1;
+}
+
+.exp3-map-field-key {
+  grid-column: 1;
+  grid-row: 2;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 7px;
+  padding: 16px 12px;
+  border-top: 0;
+  border-right: 1px solid #e6dced;
+  border-bottom: 0;
+  background: #f9f5fc;
+}
+
+.exp3-map-field-key > span {
+  margin: 0 0 5px;
+  line-height: 1.45;
+}
+
+.exp3-map-field-key button {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 8px 9px;
+  border-color: #e3d8ed;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.exp3-map-field-key button:hover,
+.exp3-map-field-key button:focus-visible {
+  border-color: #9f84ba;
+  background: #f1e9f7;
+}
+
+.exp3-map-field-key button.active {
+  border-color: var(--purple);
+  background: var(--purple);
+  color: #fff;
+}
+
+.exp3-stage {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.exp3-position-marker {
+  fill: #705686;
+  font-weight: 700;
+}
+
+.exp3-symbol-key .exp3-legend-experience {
+  width: 18px;
+  height: 0;
+  border: 0;
+  border-top: 2px solid var(--exp3-governance);
+  border-radius: 0;
+}
+
+.exp3-symbol-key .exp3-legend-experience::after {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .exp3-stage-wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .exp3-stage-caption,
+  .exp3-map-field-key,
+  .exp3-stage,
+  .exp3-map-foot {
+    grid-column: 1;
+  }
+
+  .exp3-stage-caption {
+    grid-row: 1;
+  }
+
+  .exp3-map-field-key {
+    grid-row: 2;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    border-right: 0;
+    border-bottom: 1px solid #e6dced;
+  }
+
+  .exp3-map-field-key > span {
+    flex: 1 0 100%;
+    margin: 0 0 2px;
+  }
+
+  .exp3-map-field-key button {
+    width: auto;
+    padding: 7px 9px;
+  }
+
+  .exp3-stage {
+    grid-row: 3;
+  }
+
+  .exp3-map-foot {
+    grid-row: 4;
+  }
+}
+
+/* Axis titles share the SVG projection; field controls sit below the plot. */
+.exp3-module {
+  --exp3-people: #2768a5;
+  --exp3-media: #b23a4b;
+  --exp3-governance: #63338d;
+  --exp3-policy: #a35d00;
+  --exp3-technology: #147a62;
+}
+
+.exp3-stage-wrap {
+  display: block;
+}
+
+.exp3-stage-caption,
+.exp3-stage,
+.exp3-map-foot {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.exp3-svg-axis-title {
+  fill: var(--exp3-ink);
+  stroke: rgba(252, 250, 255, 0.96);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+  pointer-events: none;
+  font: 700 11px var(--sans);
+  letter-spacing: 0.1em;
+}
+
+.exp3-svg-axis-note {
+  fill: var(--exp3-muted);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.exp3-field-strip {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  padding: 10px 12px 11px;
+  border: 1px solid #e6dced;
+  border-top: 0;
+  background: #f9f5fc;
+}
+
+.exp3-field-strip > span {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 0 7px 0 1px;
+  color: var(--exp3-muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.exp3-field-strip button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+  flex: 1 1 0;
+  padding: 7px 8px;
+  border: 1px solid #ddd0e8;
+  border-top: 2px solid var(--field-color);
+  background: color-mix(in srgb, var(--field-color) 7%, #fff);
+  color: var(--field-color);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1.2;
+}
+
+.exp3-field-strip button i {
+  width: 10px;
+  height: 3px;
+  flex: 0 0 auto;
+  background: var(--field-color);
+}
+
+.exp3-field-strip button:hover,
+.exp3-field-strip button:focus-visible {
+  border-color: var(--field-color);
+  color: var(--field-color);
+}
+
+.exp3-field-strip button.active {
+  border-color: var(--field-color);
+  background: var(--field-color);
+  color: #fff;
+}
+
+.exp3-field-strip button.active i {
+  background: currentColor;
+}
+
+.exp3-hover-card {
+  z-index: 700;
+}
+
+.exp3-lane-grid.is-muted {
+  opacity: 0.12;
+}
+
+.exp3-lane-grid.is-active {
+  stroke-width: 2.5;
+  opacity: 1;
+}
+
+.exp3-activity-index {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.exp3-clear-field {
+  padding: 5px 8px;
+  border: 1px solid #ddd0e8;
+  background: #fff;
+  color: var(--exp3-ink);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.exp3-clear-field:disabled {
+  color: var(--exp3-muted);
+  cursor: default;
+  opacity: 0.7;
+}
+
+@media (max-width: 760px) {
+  .exp3-svg-axis-title {
+    font-size: 9px;
+  }
+
+  .exp3-svg-axis-note {
+    font-size: 7px;
+  }
+
+  .exp3-field-strip {
+    flex-wrap: wrap;
+  }
+
+  .exp3-field-strip > span {
+    flex: 1 0 100%;
+    padding-bottom: 2px;
+  }
+
+  .exp3-field-strip button {
+    flex: 1 1 calc(33.333% - 6px);
+  }
+}
+
+/* Experience controls: one visual frame, fewer nested boxes, readable labels. */
+.exp3-toolbar {
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+}
+
+.exp3-tabs {
+  gap: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.exp3-tabs button {
+  position: relative;
+  padding: 7px 0 10px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.exp3-tabs button::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: transparent;
+  content: "";
+}
+
+.exp3-tabs button.active {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.exp3-tabs button.active::after {
+  background: var(--purple);
+}
+
+.exp3-presets {
+  gap: 0;
+}
+
+.exp3-presets button {
+  padding: 6px 9px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  font-size: 11px;
+}
+
+.exp3-presets button + button {
+  border-left: 1px solid var(--exp3-line);
+}
+
+.exp3-presets button:hover,
+.exp3-presets button:focus-visible {
+  border-bottom-color: var(--purple);
+  color: var(--purple);
+}
+
+.exp3-tool-note,
+.exp3-stage-caption {
+  font-size: 11px;
+}
+
+.exp3-stage-wrap,
+.exp3-story-rail {
+  border-color: #ddd1e6;
+  box-shadow: none;
+}
+
+.exp3-stage {
+  background: #fcfaff;
+}
+
+.exp3-story-rail {
+  border-top: 3px solid var(--purple);
+  background: #fff;
+}
+
+.exp3-field-strip {
+  gap: 4px;
+  border: 0;
+  border-top: 1px solid #e6dced;
+  background: #faf8fc;
+}
+
+.exp3-field-strip > span {
+  font-size: 10px;
+}
+
+.exp3-field-strip button {
+  padding: 8px 7px 7px;
+  border: 0;
+  border-bottom: 2px solid var(--field-color);
+  background: transparent;
+  font-size: 11px;
+}
+
+.exp3-field-strip button i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.exp3-field-strip button:hover,
+.exp3-field-strip button:focus-visible,
+.exp3-field-strip button.active {
+  border-color: var(--field-color);
+  background: color-mix(in srgb, var(--field-color) 11%, #fff);
+  color: var(--field-color);
+}
+
+.exp3-field-strip button.active i {
+  background: var(--field-color);
+}
+
+.exp3-map-foot,
+.exp3-symbol-key,
+.exp3-clear-field {
+  font-size: 11px;
+}
+
+.exp3-symbol-key {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.exp3-clear-field {
+  padding: 3px 0;
+  border: 0;
+  background: transparent;
+}
+
+.exp3-grid-label,
+.exp3-node-label small {
+  font-size: 10px;
+}
+
+.exp3-node-label b {
+  font-size: 14px;
+}
+
+.exp3-svg-axis-note,
+.exp3-hover-card small,
+.exp3-hover-card em {
+  font-size: 10px;
+}
+
+.exp3-hover-card span {
+  font-size: 12px;
+}
+
+.exp3-rail-kicker,
+.exp3-rail-date,
+.exp3-rail-subhead small,
+.exp3-rail-subhead span,
+.exp3-linked-copy small,
+.exp3-linked-copy em,
+.exp3-method-note {
+  font-size: 11px;
+}
+
+.exp3-rail-subhead small {
+  max-width: none;
+  white-space: nowrap;
+}
+
+/* Listing pages: slightly quieter titles, stronger Abstract labels. */
+.research-results .research-index h2,
+.public-writing-list h2 {
+  font-size: clamp(18px, 1.3vw, 21px);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.018em;
+}
+
+.research-index > a > p > strong,
+.public-writing-list .writing-abstract strong {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: inherit;
+  text-transform: uppercase;
+}
+
+/* Pinch and modified-wheel zoom remain distinct from ordinary page scrolling. */
+.exp3-stage-tools {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .exp3-stage-caption {
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .exp3-stage-tools {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    white-space: normal;
+  }
+}
+
+/* Field controls should read as filters, not merely as a color legend. */
+.exp3-field-strip > span {
+  min-width: 92px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1.15;
+}
+
+.exp3-field-strip > span::after {
+  margin-top: 3px;
+  color: var(--exp3-muted);
+  content: "SELECT A FIELD";
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.exp3-field-strip button {
+  position: relative;
+  justify-content: flex-start;
+  gap: 7px;
+  text-align: left;
+}
+
+.exp3-field-strip button::after {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  flex: 0 0 auto;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  content: "SELECT";
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  opacity: 0;
+}
+
+.exp3-field-strip button:hover::after,
+.exp3-field-strip button:focus-visible::after {
+  border-bottom-color: currentColor;
+  opacity: 1;
+}
+
+.exp3-field-strip button.active::after {
+  border-bottom-color: currentColor;
+  background: transparent;
+  color: inherit;
+  content: "SELECTED";
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .exp3-field-strip > span {
+    min-width: 0;
+  }
+}
